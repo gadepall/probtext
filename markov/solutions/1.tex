@@ -1,34 +1,68 @@
-Given, a fair coin is tossed is tossed two times.
-Let's define a Markov chain $\{X_{n},n=0,1,2,\dots\}$, where $X_{n}\in S=\{1,2,3\}$, such that
-\begin{table}[h!]
+\begin{figure}[!ht]
+  \centering
+  \begin{tikzpicture}
+         
+               % Setup the style for the states
+          \tikzset{node style/.style={state, 
+                                      minimum width=2cm,
+                                      line width=1mm,
+                                      fill=gray!20!white}}
+          % Draw the states
+          \node[node style] at (3, 0)      (bull)     {1};
+          \node[node style] at (0, -4)      (bear)     {2};
+          \node[node style] at (6, -4) (stagnant) {3};
+          % Connect the states with arrows
+          \draw[every loop,
+                auto=right,
+                line width=0.7mm,
+                >=latex,
+                draw=orange,
+                fill=orange]
+             (bull)     edge[bend left=20]            node {$\frac{1}{2}$} (stagnant)
+              (bull)     edge[bend right=20] node {$\frac{1}{4}$} (bear)
+              
+              
+              (bull) edge[loop above]             node  {$\frac{1}{4}$} (bull)
+              (bear) edge[loop below]             node  {1} (bear)
+              (stagnant) edge[loop below]             node  {1} (stagnant);
+      \end{tikzpicture}
+      \caption{}
+      \label{fig:markov/1}
+  \end{figure}
+  The given problem can be represented using Table \ref{ec9:table:1} and the Markov chain in Fig. \ref{fig:markov/1}.
+% Given, a fair coin is tossed is tossed two times.
+% Let's define a Markov chain $\{X_{n},n=0,1,2,\dots\}$, where $X_{n}\in S=\{1,2,3\}$, such that
+\begin{table}[ht!]
 \centering
-\caption{States and their notations}
-\label{ec9:table:1}
 \begin{tabular}{|c|c|}
     \hline
-    Notation & State \\
+    State & Description \\
     \hline
-    $S=1$ & getting \cbrak{TT}\\[1ex]
+    1 & $\cbrak{T, T}$\\[1ex]
     \hline
-    $S=2$ & getting output Y\\[1ex]
+    2 &  $Y = \cbrak{T, H}$\\[1ex]
     \hline
-    $S=3$ & getting output N\\[1ex]
+    3 & $N = \cbrak{\cbrak{H, H},\cbrak{H, T}}$\\[1ex]
     \hline
 \end{tabular}
-\end{table}\\
-The state transition matrix for the Markov chain is
+\caption{States and their notations}
+\label{ec9:table:1}
+\end{table}
+The state transition matrix for the Markov chain can be expressed as
 \begin{align}
-\label{ec9:eq:1}
-P=\begin{blockarray}{cccccc}
-&1 & 2 & 3 \\
-\begin{block}{c[ccccc]}
-  1 & 0.25 & 0.25 & 0.5  \\
-  2 & 0 & 1 & 0 \\
-  3 & 0 & 0 & 1  \\
-\end{block}
-\end{blockarray}
-\end{align}
-Clearly, the state $1$ are transient, while $2,3$ are absorbing. The standard form of a state transition matrix is
+  P=\begin{blockarray}{cccccc}
+  &2 & 3 & 1  \\
+  \begin{block}{c[ccccc]}
+    2 & 1 & 0 & 0  \\
+    3 & 0 & 1 & 0 \\
+    1 & 0.25 & 0.5 & 0.25  \\
+  \end{block}
+  \end{blockarray}
+  \label{ec9:eq:1}
+  \end{align}
+%  
+Clearly, the state $1$ is transient, while $2,3$ are absorbing. Comparing   \eqref{ec9:eq:1} with the standard form of 
+the state transition matrix 
 \begin{align}
 \label{ec9:eq:2}
 P=\begin{blockarray}{ccc}
@@ -40,7 +74,7 @@ P=\begin{blockarray}{ccc}
 \end{blockarray}
 \end{align}
 where,
-\begin{table}[h!]
+\begin{table}[ht!]
 \centering
 \caption{Notations and their meanings}
 \label{ec9:table:2}
@@ -60,83 +94,54 @@ where,
     \hline
 \end{tabular}
 \end{table}
-Converting \eqref{ec9:eq:1} to standard form, we get
+From   \eqref{ec9:eq:1} and  \eqref{ec9:eq:2},
 \begin{align}
-P=\begin{blockarray}{cccccc}
-&2 & 3 & 1  \\
-\begin{block}{c[ccccc]}
-  2 & 1 & 0 & 0  \\
-  3 & 0 & 1 & 0 \\
-  1 & 0.25 & 0.5 & 0.25  \\
-\end{block}
-\end{blockarray}
-\end{align}
-From \eqref{ec9:eq:2},
-\begin{align}
-\tag{104.5}
 \label{ec9:eq:r,q}
-    R=\begin{bmatrix}
+    R=\myvec{
     0.25 & 0.5\\
-    \end{bmatrix},
-    Q=\begin{bmatrix}
+    },
+    Q=\myvec{
     0.25\\
-    \end{bmatrix}
+    }
 \end{align}
 The limiting matrix for absorbing Markov chain is
 \begin{align}
-\bar P=\begin{bmatrix}
+\bar P=\myvec{
     I & O\\
     FR & O\\
-    \end{bmatrix}
+    }
+    \label{eq:markov/1/limit}
 \end{align}
-where,
+where
 \begin{align}
-F=(I-Q)^{-1}
+F=\brak{I-Q}^{-1} = \brak{1-0.25}^{-1} = \frac{4}{3}
+\label{eq:markov/1/fund}
 \end{align}
-is called the fundamental matrix of $P$. \\
-On solving, we get
+is called the fundamental matrix of $P$. 
+Upon substituting from \eqref{ec9:eq:r,q} in \eqref{eq:markov/1/fund},
+\begin{align}
+  F=\brak{1-0.25}^{-1} = \frac{4}{3}
+  \end{align}
+  %
+  and
+  \begin{align}
+    FR=\myvec{\frac{1}{3} & \frac{2}{3}}
+    \end{align}
+  which, upon substituting in \eqref{eq:markov/1/limit} yields
 \begin{align}
 \bar P=\begin{blockarray}{cccccc}
 &2 & 3 & 1 \\
 \begin{block}{c[ccccc]}
     2 & 1 & 0 & 0\\ 
     3 & 0 & 1 & 0\\ 
-    1 & 0.33 & 0.17 & 0\\    
+    1 & \frac{1}{3} & \frac{2}{3} & 0\\    
 \end{block}
 \end{blockarray}
 \end{align}
-A element $\bar p_{ij}$ of $\bar P$ denotes the absorption probability in state $j$, starting from state $i$. 
-\\ Then, the absorption probability in state 2 $\brak{\text{i.e getting output Y}}$ starting from state 1 is $\bar p_{12}$.
+% The desired probability is given by $\bar{p}_{12}$
+% A element $\bar p_{ij}$ of $\bar P$ denotes the absorption probability in state $j$, starting from state $i$. 
+
+% \\ Then, the absorption probability in state 2 $\brak{\text{i.e getting output Y}}$ starting from state 1 is $\bar p_{12}$.
 \begin{align}
-\therefore \bar p_{12}=0.33 \brak{\text{correct upto 2 decimal places}}
+\therefore \bar p_{12}=\frac{1}{3}
 \end{align}
-\begin{figure}[h]
-\caption*{\textbf{Markov chain diagram}}
-\centering
-\begin{tikzpicture}
-       
-             % Setup the style for the states
-        \tikzset{node style/.style={state, 
-                                    minimum width=2cm,
-                                    line width=1mm,
-                                    fill=gray!20!white}}
-        % Draw the states
-        \node[node style] at (3, 0)      (bull)     {$X_{1}$};
-        \node[node style] at (0, -4)      (bear)     {$X_{2}$};
-        \node[node style] at (6, -4) (stagnant) {$X_{3}$};
-        % Connect the states with arrows
-        \draw[every loop,
-              auto=right,
-              line width=0.7mm,
-              >=latex,
-              draw=orange,
-              fill=orange]
-           (bull)     edge[bend left=20]            node {$\frac{1}{2}$} (stagnant)
-            (bull)     edge[bend right=20] node {$\frac{1}{4}$} (bear)
-            
-            
-            (bull) edge[loop above]             node  {$\frac{1}{4}$} (bull)
-            (bear) edge[loop below]             node  {1} (bear)
-            (stagnant) edge[loop below]             node  {1} (stagnant);
-    \end{tikzpicture}
-\end{figure}
