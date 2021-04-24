@@ -1,0 +1,54 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Let $ c \in \mathbb{R} $ be a constant. Let $ X, Y$ be random variables with joint probability density function 
+\begin{align}
+f(x,y)  = 
+\begin{cases}
+cxy &  0<x<y<1,
+\\
+0 & \text{ otherwise }
+\end{cases}
+\label{eq:: joint_pdf}
+\end{align}
+Which of the following statements are correct ?
+\begin{enumerate}
+    \item $c = \frac{1}{8}$
+    \item $ c= 8$
+    \item $X $ and $ Y$ are independent
+    \item $\Pr\brak{X= Y} = 0 $
+\end{enumerate}
+\solution
+\input{twoD/solutions/1.tex}
+%
+\item Let $X$ and $Y$ be random variables having the joining probability density function
+\begin{align}
+f_{XY}(x,y)=
+\begin{cases}
+\frac{1}{\sqrt{2\pi y}}e^{\frac{-1}{2y}(x-y)^2} & 
+\begin{array}{c}
+x \in \brak{-\infty,\infty}, 
+\\
+y \in \brak{0, 1} 
+\end{array}
+\\
+0 &\text{otherwise}
+\end{cases}
+\label{eq:twoD/2}
+\end{align}
+The covariance between the random variables X and Y is
+\\
+%
+\solution
+%\input{twoD/solutions/2.tex}
+\item Let a random variable $X$ follow exponential distribution with mean 2. Define $Y=[X-2|X>2]$. The value of $\pr{Y \geq t}$ is \dots
+\\
+%
+\solution
+\input{twoD/solutions/3.tex}
+\end{enumerate}

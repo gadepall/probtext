@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.13)  23 APR 2021 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.13)  24 APR 2021 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1860,63 +1860,80 @@ File: ot1txtt.fd 2000/12/15 v3.1
 \c@lemma=\count405
 \c@example=\count406
 \c@rem=\count407
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 254.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 255.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 13.29996pt on input line 254.
+(Font)              scaled to size 13.29996pt on input line 255.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.30992pt on input line 254.
+(Font)              scaled to size 9.30992pt on input line 255.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 254.
+(Font)              scaled to size 6.64998pt on input line 255.
 
 (./gvv_probtext.toc)
 \tf@toc=\write5
 \openout5 = `gvv_probtext.toc'.
 
- (./axioms/problems.tex) (./markov/problems.tex
-(./markov/solutions/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./axioms/problems.tex (./axioms/solutions/1.tex
+Underfull \vbox (badness 4181) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
+]) (./axioms/solutions/2.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+(./axioms/solutions/3.tex)) (./geometric/problems.tex [2]
+(./geometric/solutions/1.tex)) (./twoD/problems.tex (./twoD/solutions/1.tex
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./twoD/solutions/3.tex)) (./markov/problems.tex (./markov/solutions/1.tex
+[4]
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 62.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 62.
-
-Underfull \vbox (badness 2556) has occurred while \output is active []
-
-)) [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
-
-(./gvv_probtext.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+)) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+ (./gvv_probtext.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `gvv_probtext.out' has not changed.
-(rerunfilecheck)             Checksum: 71CB3BC2247CE38480D68CE3054FE8E5;103.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+(rerunfilecheck)             Checksum: 730317F9218EA3F2107E46758EA00825;194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 52010 strings out of 481239
- 1299765 string characters out of 5920377
- 1801920 words of memory out of 5000000
- 66289 multiletter control sequences out of 15000+600000
- 615342 words of font info for 210 fonts, out of 8000000 for 9000
+ 52160 strings out of 481239
+ 1301701 string characters out of 5920377
+ 1808920 words of memory out of 5000000
+ 66318 multiletter control sequences out of 15000+600000
+ 619410 words of font info for 216 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 63i,14n,98p,734b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,19n,98p,734b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
 fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on gvv_probtext.pdf (2 pages, 64998 bytes).
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_probtext.pdf (5 pages, 91928 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

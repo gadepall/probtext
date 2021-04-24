@@ -133,7 +133,8 @@ columns=fullflexible
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 %\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
-\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\mean}[1]{\text{E}\left( #1 \right)}
+\providecommand{\cov}[1]{\text{cov}\left( #1 \right)}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
@@ -297,8 +298,13 @@ Probability
 This book provides solved examples on Probability
 \end{abstract}
 
-\section{Axioms of Probability}
+\section{Axioms}
 \input{axioms/problems.tex}
+\section{Geometric Distribution}
+\input{geometric/problems.tex}
+\section{Two Dimensions}
+\input{twoD/problems.tex}
+
 \section{Markov Chain}
 \input{markov/problems.tex}
 %  \section{June 2019}
