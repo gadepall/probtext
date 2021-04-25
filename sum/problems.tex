@@ -1,0 +1,22 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+
+\item Let  $X\in \{ 0,1 \}$ and $Y\in \{ 0,1 \}$ be two independent binary random variables. If $\pr{X=0}$ = p and  $\pr{Y=0}$ = q, then $\pr{X+Y \geqslant 1}$) is equal to 
+\begin{enumerate}
+\item $pq+(1-p)(1-q)$ 
+\item  $pq$    
+\item $p(1-q)$ 
+\item  $1-pq$  
+\end{enumerate}
+%
+\solution
+%
+\input{sum/solutions/1.tex}
+%
+\end{enumerate}
