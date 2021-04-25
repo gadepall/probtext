@@ -1,0 +1,37 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item An experiment consists of two papers.paper1 and paper2.The probability of failing in paper 1 is .3 and that in paper 2 is .2.Given that a student has failed in paper 2,the probability of failing in paper 1 is .6.The probability of student failing in both is\\
+\begin{enumerate}
+    \setlength\itemsep{2em}
+\item .5 
+\item .18 
+\item .12 
+\item .06 
+\end{enumerate}
+%
+\solution
+\input{cond/solutions/3.tex}
+%
+\item An urn contains 5 red balls and 5 black balls.In the first draw, one ball is picked at random and discarded without noticing its colour.The probability to get a red ball in the second draw is 
+\begin{enumerate}
+    \begin{multicols}{4}
+    \setlength\itemsep{2em}
+    
+    \item $\dfrac{1}{2}$
+    \item $\dfrac{4}{9}$
+    \item $\dfrac{5}{9}$
+    \item $\dfrac{6}{9}$
+    \end{multicols}
+    \end{enumerate}    
+%
+\solution
+\input{cond/solutions/4.tex}
+
+
+\end{enumerate}

@@ -134,8 +134,11 @@ columns=fullflexible
 %\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{\text{E}\left( #1 \right)}
+\providecommand{\var}[1]{\text{var}\left( #1 \right)}
 \providecommand{\cov}[1]{\text{cov}\left( #1 \right)}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\gauss}[2]{\ensuremath{\mathcal{N}\left({#1}, {#2} \right)}}
+%\mathcal{N}\left(0,\frac{1}{4}\right)\\
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
 	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
@@ -300,11 +303,18 @@ This book provides solved examples on Probability
 
 \section{Axioms}
 \input{axioms/problems.tex}
-\section{Sum of Random Variables}
-\input{sum/problems.tex}
+
+\section{Elementary Probability}
+\input{cond/problems.tex}
+\section{Independent Random Variables}
+\input{indep/problems.tex}
 \section{Binomial  Distribution}
 \input{binomial/problems.tex}
 %
+\section{Gaussian  Distribution}
+\input{gauss/problems.tex}
+%
+
 \section{Geometric Distribution}
 \input{geometric/problems.tex}
 \section{Two Dimensions}
