@@ -1,0 +1,31 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Let $X$ be a Poisson random variable with p.m.f
+\begin{align}
+\label{poisson/1/eq:1}
+P(X=k) = 
+    \begin{cases} 
+      \frac{e^{-\lambda}\lambda^{k}}{k!},& k=0,1,2,...;  \lambda > 0\\
+      0 & \text{otherwise}
+   \end{cases}
+\end{align}
+If $Y = X^2 + 3$, then what is $P(Y=y)$ equal to?
+\begin{enumerate}[label={(\Alph*)}]
+    \item $\frac{e^{-\lambda}\lambda^{\sqrt{y-3}}}{\sqrt{\brak{y-3}}!}$, for $y =$ \cbrak{3,4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{-\sqrt{y-3}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{3,4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{-\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
+\end{enumerate}
+%
+\solution
+\input{poisson/solutions/1/Assignment4.tex}
+
+
+
+\end{enumerate}

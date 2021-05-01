@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.13)  25 APR 2021 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.13)  1 MAY 2021 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1882,52 +1882,123 @@ Underfull \vbox (badness 4181) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
-(./cond/problems.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+(./cond/problems.tex (./cond/solutions/1.tex) (./cond/solutions/2.tex [2]
+Overfull \hbox (12.5137pt too wide) detected at line 6
+ []$[]  []$ 
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
-(./cond/solutions/3.tex) [2] (./cond/solutions/4.tex)) (./indep/problems.tex
-(./indep/solutions/1.tex) (./indep/solutions/2.tex)) (./binomial/problems.tex
-(./binomial/solutions/1.tex)) (./gauss/problems.tex (./gauss/solutions/1.tex
-[3])) (./geometric/problems.tex (./geometric/solutions/1.tex))
-(./twoD/problems.tex (./twoD/solutions/1.tex [4]
+(./cond/solutions/3.tex) (./cond/solutions/4.tex)) (./indep/problems.tex
+(./indep/solutions/1.tex [3]) (./indep/solutions/2.tex)
+(./indep/solutions/3.tex
+Underfull \vbox (badness 5091) has occurred while \output is active []
+
+ [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./twoD/solutions/3.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
- [5]))
-(./markov/problems.tex (./markov/solutions/1.tex
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 62.
- [6]))
-(./convergence/problems.tex
-Overfull \hbox (60.99765pt too wide) detected at line 31
- []$[]   [] [] \OMS/txsy/m/n/12 ! [] [] 8\OML/txmi/m/it/12 x \OMS/txsy/m/n/12 2
- \U/txsyb/m/n/12 R\OML/txmi/m/it/12 ; Y \OMS/txsy/m/n/12 ^^X \OML/txmi/m/it/12 
-N []$ []  
  []
 
-) [7
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+) (./binomial/problems.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+(./binomial/solutions/1.tex)) (./poisson/problems.tex
+(./poisson/solutions/1/Assignment4.tex
+<poisson/solutions/1/Figures/FigureX.png, id=257, 386.44376pt x 248.93pt>
+File: poisson/solutions/1/Figures/FigureX.png Graphic file (type png)
+<use poisson/solutions/1/Figures/FigureX.png>
+Package pdftex.def Info: poisson/solutions/1/Figures/FigureX.png  used on input
+ line 17.
+(pdftex.def)             Requested size: 252.0pt x 162.32675pt.
+<poisson/solutions/1/Figures/FigureComp.png, id=259, 382.42876pt x 248.93pt>
+File: poisson/solutions/1/Figures/FigureComp.png Graphic file (type png)
+<use poisson/solutions/1/Figures/FigureComp.png>
+Package pdftex.def Info: poisson/solutions/1/Figures/FigureComp.png  used on in
+put line 23.
+(pdftex.def)             Requested size: 252.0pt x 164.03221pt.
+)) (./gauss/problems.tex
+(./gauss/solutions/1.tex)) (./geometric/problems.tex
+(./geometric/solutions/1.tex [6 <./poisson/solutions/1/Figures/FigureX.png>]))
+(./twoD/problems.tex (./twoD/solutions/1.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./poisson/solutions/1/Figures/FigureComp.png>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./twoD/solutions/3.tex)) (./markov/problems.tex (./markov/solutions/1.tex
+[8]
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 62.
+)) (./conv/problems.tex [9] (./conv/solutions/1.tex
+Underfull \hbox (badness 3199) in paragraph at lines 13--15
+[][]\OT1/txr/bx/n/12 Definition 2. []\OT1/txr/m/n/12 Or-der Statis-tics : \OT1/
+txr/m/it/12 Given a
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [11]
+(./conv/solutions/2.tex)) (./stats/problems.tex (./stats/solutions/1/main.tex
+<stats/solutions/1/figures/cdf.png, id=489, 392.46625pt x 262.9825pt>
+File: stats/solutions/1/figures/cdf.png Graphic file (type png)
+<use stats/solutions/1/figures/cdf.png>
+Package pdftex.def Info: stats/solutions/1/figures/cdf.png  used on input line 
+60.
+(pdftex.def)             Requested size: 252.0pt x 168.86197pt.
+<stats/solutions/1/figures/pdf.png, id=490, 392.46625pt x 262.9825pt>
+File: stats/solutions/1/figures/pdf.png Graphic file (type png)
+<use stats/solutions/1/figures/pdf.png>
+Package pdftex.def Info: stats/solutions/1/figures/pdf.png  used on input line 
+66.
+(pdftex.def)             Requested size: 252.0pt x 168.86197pt.
+)) [12] [13
+
+ <./stats/solutions/1/figures/cdf.png> <./stats/solutions/1/figures/pdf.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./gvv_probtext.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `gvv_probtext.out' has not changed.
-(rerunfilecheck)             Checksum: 08F00D5F12D04A89F94D1DD8D22E315A;472.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
+(rerunfilecheck)             Checksum: E7255BBD26F52CAC5688A1A9F9717F1F;576.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 52269 strings out of 481239
- 1303133 string characters out of 5920377
- 1808920 words of memory out of 5000000
- 66339 multiletter control sequences out of 15000+600000
- 619410 words of font info for 216 fonts, out of 8000000 for 9000
+ 52789 strings out of 481239
+ 1309071 string characters out of 5920377
+ 1813920 words of memory out of 5000000
+ 66657 multiletter control sequences out of 15000+600000
+ 619648 words of font info for 217 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,19n,98p,734b,1211s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1941,10 +2012,10 @@ are/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive
 /fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_probtext.pdf (7 pages, 106039 bytes).
+Output written on gvv_probtext.pdf (13 pages, 170244 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
- 170 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 339 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

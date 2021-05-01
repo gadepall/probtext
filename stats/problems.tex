@@ -1,0 +1,25 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+
+
+\item Let $Y_1$ denote the first order statistic in a random sample of size $n$ from a distribution that has the pdf 
+\begin{align}
+    f(x) = 
+    \begin{cases}
+    e^{-(x-\theta)}&\text{ when } \theta<x<\infty\\
+    0 &\text{  otherwise} 
+    \end{cases}
+\end{align}
+Obtain the distribution of $Z_n = n(Y_1 - \theta)$.
+%
+\\
+\solution
+\input{stats/solutions/1/main.tex}
+
+\end{enumerate}
