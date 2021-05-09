@@ -23,7 +23,6 @@
 \usepackage{stfloats}
 \usepackage{steinmetz}
 \usepackage{supertabular}
-%\usepackage{bm}
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
@@ -34,6 +33,7 @@
 %\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
+\usepackage[thinc]{esdiff}
 \usepackage{tikz}
 \usepackage{circuitikz}
 \usepackage{verbatim}
@@ -60,7 +60,12 @@
 \usepackage{multicol}
 \usepackage{chngcntr}
 \usepackage{blkarray}
+\usepackage{upgreek}
+\usepackage{diagbox,pict2e,fp}
+%\usepackage{slashbox}
 %\usepackage{enumerate}
+%\newcommand\hmmax{0} % default 3
+%\usepackage{bm}
 
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
@@ -135,7 +140,7 @@ columns=fullflexible
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{\text{E}\left( #1 \right)}
 \providecommand{\var}[1]{\text{var}\left( #1 \right)}
-\providecommand{\cov}[1]{\text{cov}\left( #1 \right)}
+\providecommand{\cov}[2]{\text{cov}\left({#1}, {#2} \right)}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
 \providecommand{\gauss}[2]{\ensuremath{\mathcal{N}\left({#1}, {#2} \right)}}
 %\mathcal{N}\left(0,\frac{1}{4}\right)\\
@@ -162,6 +167,7 @@ columns=fullflexible
 
 \let\StandardTheFigure\thefigure
 \let\vec\mathbf
+%\let\vec\bm
 %\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \renewcommand{\thefigure}{\theproblem}
 %\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
@@ -306,6 +312,9 @@ This book provides solved examples on Probability
 
 \section{Elementary Probability}
 \input{cond/problems.tex}
+\section{Transformation of Variables}
+\input{trans/problems.tex}
+
 \section{Independent Random Variables}
 \input{indep/problems.tex}
 \section{Binomial  Distribution}

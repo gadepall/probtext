@@ -21,5 +21,24 @@ Obtain the distribution of $Z_n = n(Y_1 - \theta)$.
 \\
 \solution
 \input{stats/solutions/1/main.tex}
+%
+\item Let $X_1, X_2, \ldots , X_n$ be a random sample of size $n \; ( \geq 2 ) $ from a distribution having the probability density function
+\begin{align}
+f(x;\theta) = 
+\begin{cases}
+\dfrac{1}{\theta} \exp\brak{-\dfrac{x}{\theta}} & x > 0, \\
+0, & \text{otherwise,}
+\end{cases}
+\end{align}
+where $\theta \in (0, \infty)$. Let $X_{(1)} = $ min $ \{ X_1, X_2, \ldots , X_n \} $ and $T = \sum_{i=1}^n X_i $. Then $E(X_{(1)} | T)$ equals 
+\begin{enumerate}[label = (\Alph*)]
+\item $\dfrac{T}{n^2}$ \\
+\item $\dfrac{T}{n}$ \\
+\item $\dfrac{(n+1)T}{2n}$ \\
+\item $\dfrac{(n+1)^2 T}{4n^2}$
+\end{enumerate}
+\solution
+\input{stats/solutions/2/Assignment6.tex}
+
 
 \end{enumerate}
